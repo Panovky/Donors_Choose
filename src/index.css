@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: inline-grid;
+    position: fixed;
+    top: 23px;
+    width: 100%;
+    grid-template-columns: minmax(100px, 2fr) minmax(300px, 1.5fr) minmax(450px, 2.7fr) minmax(100px, 1.8fr);
+    align-items: center;
+}
+
+.header__logo {
+    justify-self: end;
+}
+
+.header__button, .header__button:active {
+    justify-self: center;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 0.6em 0.7em 0.5em;
+    font-weight: bold;
+    font-family: Bahnschrift SemiCondensed, serif;
+    font-size: 13pt;
+    color: rgb(0, 0, 0, 0.8);
+    text-decoration-line: none;
+}
+
+.header__button:hover {
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 0.03);
+
+}
+
+.header__links:nth-child(-n+3) {
+    justify-self: center;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+}
+
+.header__links:nth-child(-n+2) {
+    border-right: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.header__links, .header__links:active {
+    text-decoration-line: none;
+    font-family: Bahnschrift SemiCondensed, serif;
+    color: rgb(0, 0, 0, 0.85);
+}
+
+.header__links:hover {
+    color: rgb(0, 0, 0, 1);
+}
+
+
