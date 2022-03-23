@@ -1,0 +1,391 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: absolute;
+    display: inline-grid;
+    top: 23px;
+    width: 100%;
+    grid-template-columns: minmax(100px, 2fr) minmax(300px, 1.5fr) minmax(450px, 2.7fr) minmax(100px, 1.8fr);
+    align-items: center;
+}
+
+.header__logo {
+    justify-self: end;
+}
+
+.header__button:link, .header__button:visited {
+    justify-self: center;
+    padding: 0.6em 0.7em 0.5em;
+    color: rgb(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-family: Bahnschrift SemiCondensed, serif;
+    font-size: 13pt;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    text-decoration-line: none;
+}
+
+.header__link:link, .header__link:visited {
+    text-decoration-line: none;
+    font-family: Bahnschrift SemiCondensed, serif;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.header__link:nth-child(-n+3) {
+    justify-self: center;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+}
+
+.header__link:nth-child(-n+2) {
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.build {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: minmax(100px, 3fr) minmax(600px, 5fr);
+}
+
+.build__column:first-child {
+    background-color: rgb(255, 140, 0);
+    background-image: url("back_build.png");
+}
+
+.build__column:last-child {
+    padding: 20px 50px 20px;
+    background-color: rgb(0, 0, 128, 0.9);
+}
+
+.build__title {
+    font-size: 37pt;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    color: rgb(255, 140, 0);
+}
+
+.build__description {
+    font-size: 18pt;
+    color: white;
+    padding-right: 100px;
+}
+
+.build__button {
+    width: 290px;
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.build__button a:link, .build__button a:visited {
+    background-color: rgb(255, 140, 0);
+    text-decoration-line: none;
+    color: white;
+    padding: 10px 32px 10px;
+}
+
+.build__button a:hover {
+    border: 2px solid white;
+}
+
+.search {
+    margin: auto;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(0, 0, 0, 0.04);
+}
+
+.search__input {
+    font-size: 12pt;
+    padding: 13px;
+    font-family: Calibri, serif;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.search__input__1{
+    margin-right: 15px;
+    width: 400px;
+}
+
+.search__input__2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 200px;
+}
+
+.search__text {
+    font-size: 13pt;
+    font-style: italic;
+}
+
+.search__button {
+    margin-left: 15px;
+    font-size: 14pt;
+    padding: 13px 24px 13px;
+    color: white;
+    border-color: white;
+    background-color: rgb(255, 140, 0);
+}
+
+.search__button:hover {
+    border: 2px solid rgb(255, 69, 0, 0.5);
+}
+
+.news {
+    margin: 30px 100px 50px;
+}
+
+.news__link {
+    text-align: center;
+    font-family: Bahnschrift SemiCondensed, serif;
+    font-size: 28pt;
+}
+
+.news__link a, .news__link a:visited {
+    color: rgb(0, 0, 255, 0.7);
+    text-decoration-line: none;
+}
+
+.news__link a:hover {
+    color: rgb(0, 0, 255, 0.85);
+    text-decoration-line: underline;
+}
+
+.news__description {
+    text-align: center;
+    color: rgb(0, 0, 0, 0.75);
+}
+
+.news__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.news__container__card {
+    display: grid;
+    grid-template-rows: 180px 123px 106px;
+    width: 295px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-top: white;
+    margin: 0 14px 14px;
+}
+
+.news__container__card__img_1 {
+    background-image: url("A1.jpg");
+}
+
+.news__container__card__img_2 {
+    background-image: url("A2.jpg");
+}
+
+.news__container__card__img_3 {
+    background-image: url("A3.jpg");
+}
+
+.news__container__card__img_4 {
+    background-image: url("A4.jpg");
+}
+
+.news__container__card__img_5 {
+    background-image: url("A5.jpg");
+}
+
+.news__container__card__img_6 {
+    background-image: url("A6.jpg");
+}
+
+.news__container__card__title {
+    color: white;
+    font-size: 19pt;
+    font-weight: bold;
+    text-align: center;
+    margin: auto 0 auto;
+    background-color: rgb(0, 0, 128, 0.8);
+}
+
+.news__container__card__description {
+    padding: 0 10px 0;
+}
+
+.news__container__card__author {
+    font-weight: bold;
+    padding: 0 10px 0;
+}
+
+.news__container__card__place {
+    font-style: italic;
+    padding: 0 10px 0;
+}
+
+.news__button {
+    position: relative;
+    margin: 40px auto auto;
+    width: 290px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.news__button a:link, .news__button a:visited{
+    padding: 14px 20px 14px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    font-family: Bahnschrift SemiCondensed, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.8);
+    text-decoration-line: none;
+}
+
+.news__button a:hover {
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255, 0.05);
+    color: rgb(0, 0, 0, 0.9);
+}
+
+.about {
+    margin: auto;
+    width: 100%;
+    height: 450px;
+    background-image: url("back_about.png");
+    background-color: rgb(0, 0, 128, 0.89);
+    background-repeat: repeat;
+}
+
+.about__title {
+    padding-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Bahnschrift SemiCondensed, serif;
+    font-size: 28pt;
+    color: rgb(255, 165, 0)
+}
+
+.about__description {
+    margin: auto;
+    width: 780px;
+    text-align: center;
+    color: white;
+    font-size: 20pt;
+}
+
+.about__button {
+    margin: 30px auto 0;
+    padding: 7px 0 7px;
+    text-align: center;
+    width: 180px;
+    font-size: 18pt;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+}
+
+.about__button:hover {
+    border: 1px solid rgb(255, 255, 255, 1);
+}
+
+.about__button a:link, .about__button a:visited {
+    color: white;
+    text-decoration-line: none;
+}
+
+.above-footer {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(0, 0, 0, 0.03);
+    border-top: 2px solid rgb(0, 0, 0, 0.09);
+    border-bottom: 2px solid rgb(0, 0, 0, 0.09);
+}
+
+.above-footer__text {
+    font-size: 23pt;
+    color: rgb(0, 0, 128, 0.9);
+    text-align: center;
+    padding: 65px 180px 30px;
+    font-family: Cambria, serif;
+}
+
+.above-footer__button {
+    margin: auto;
+    width: 290px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.above-footer__button a:link, .above-footer__button a:visited {
+    padding: 14px 20px 14px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    font-family: Bahnschrift SemiCondensed, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.8);
+    text-decoration-line: none;
+
+}
+
+.above-footer__button a:hover {
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    color: rgb(0, 0, 0, 0.9);
+}
+
+.footer {
+    width: 100%;
+    padding: 40px 60px 40px;
+    display: grid;
+    grid-template-columns: minmax(450px, 3fr) minmax(120px, 1fr) minmax(150px, 1fr) minmax(120px, 1fr);
+}
+
+.footer__column__title {
+    color: rgb(0, 0, 139);
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.footer__column__text {
+    color: rgb(0, 0, 0, 0.8);
+    margin-right: 90px;
+    font-family: Calibri, serif;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.footer__column__counters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.footer__column__counters__number {
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: "Calisto MT", serif;
+}
+
+.footer__column__counters__text {
+    font-size: 10pt;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.footer__column__link:link, .footer__column__link:visited {
+    color: rgb(0, 0, 0, 0.8);
+    font-family: Calibri, serif;
+    font-size: 12pt;
+    font-style: italic;
+    text-decoration-line: none;
+}
+
+.footer__column__link:hover {
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
+
+
